@@ -44,8 +44,6 @@ const Home: React.FC = () => {
         console.log(resultado);
         return resultado;
       });
-
-      // history.push('/')
     } catch (err) {
       if (err instanceof Yup.ValidationError) {
         const errors = getValidationError(err);
